@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key><string>en</string>
+	<key>CFBundleIdentifier</key><string>io.github.lexreman.audiocapture</string>
+	<key>CFBundleName</key><string>Audio Capture</string>
+	<key>CFBundleDisplayName</key><string>Audio Capture</string>
+	<key>CFBundleExecutable</key><string>AudioCapture</string>
+	<key>CFBundleIconFile</key><string>AppIcon</string>
+	<key>CFBundleIconName</key><string>AppIcon</string>
+	<key>CFBundlePackageType</key><string>APPL</string>
+	<key>CFBundleShortVersionString</key><string>1</string>
+	<key>CFBundleVersion</key><string>1</string>
+	<key>LSMinimumSystemVersion</key><string>14.4</string>
+	<key>LSApplicationCategoryType</key><string>public.app-category.utilities</string>
+	<key>NSPrincipalClass</key><string>NSApplication</string>
+	<key>NSHighResolutionCapable</key><true/>
+	<key>NSHumanReadableCopyright</key><string>© 2026 Lex Reman. MIT License.</string>
+	<key>NSAudioCaptureUsageDescription</key><string>Audio Capture records the sound your Mac plays, from every app or just one. It records your microphone only if you include your voice.</string>
+	<key>NSMicrophoneUsageDescription</key><string>Audio Capture adds your voice to a recording only for the apps where you turn on Include my voice.</string>
+</dict>
+</plist>

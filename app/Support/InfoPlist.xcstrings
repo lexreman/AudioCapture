@@ -1,0 +1,122 @@
+{
+  "sourceLanguage": "en",
+  "strings": {
+    "NSAudioCaptureUsageDescription": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture nimmt den Ton auf, den dein Mac abspielt, von allen Apps oder nur von einer. Dein Mikrofon wird nur aufgenommen, wenn du deine Stimme einbeziehst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture records the sound your Mac plays, from every app or just one. It records your microphone only if you include your voice."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture graba el sonido que reproduce tu Mac, de todas las apps o de una sola. Solo graba tu micrófono si incluyes tu voz."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture enregistre le son que diffuse votre Mac, de toutes les apps ou d’une seule. Il n’enregistre votre micro que si vous incluez votre voix."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture registra il suono riprodotto dal Mac, da tutte le app o da una sola. Registra il microfono solo se includi la tua voce."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio CaptureはMacで再生される音を、すべてのAppまたは1つのAppから録音します。マイクは、自分の声を含めた場合にのみ録音します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture는 Mac에서 재생되는 소리를 모든 앱 또는 하나의 앱에서 녹음합니다. 내 목소리를 포함한 경우에만 마이크를 녹음합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Audio Capture grava o som que o Mac reproduz, de todos os apps ou de apenas um. Ele só grava o microfone se você incluir sua voz."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture会录制Mac播放的声音，可录制所有App或仅录制一个App。只有在你包含自己的声音时，才会录制麦克风。"
+          }
+        }
+      }
+    },
+    "NSMicrophoneUsageDescription": {
+      "localizations": {
+        "de": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture fügt deine Stimme einer Aufnahme nur bei den Apps hinzu, für die du „Meine Stimme mit aufnehmen“ aktivierst."
+          }
+        },
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture adds your voice to a recording only for the apps where you turn on Include my voice."
+          }
+        },
+        "es": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture solo añade tu voz a una grabación en las apps en las que activas “Incluir mi voz”."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture n’ajoute votre voix à un enregistrement que pour les apps où vous activez « Inclure ma voix »."
+          }
+        },
+        "it": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture aggiunge la tua voce a una registrazione solo per le app in cui attivi “Includi la mia voce”."
+          }
+        },
+        "ja": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Captureは、“自分の声を含める”をオンにしたAppの録音にのみ、自分の声を追加します。"
+          }
+        },
+        "ko": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture는 ‘내 목소리 포함’을 켠 앱의 녹음에만 내 목소리를 추가합니다."
+          }
+        },
+        "pt-BR": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "O Audio Capture só adiciona sua voz a uma gravação nos apps em que você ativar “Incluir Minha Voz”."
+          }
+        },
+        "zh-Hans": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Audio Capture只会在你打开了“包含我的声音”的App录音中加入你的声音。"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

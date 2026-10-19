@@ -1,0 +1,23 @@
+{
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "glass" : false,
+          "hidden-specializations" : [ { "value" : true }, { "appearance" : "dark", "value" : false } ],
+          "image-name" : "dark.png",
+          "name" : "dark"
+        },
+        {
+          "glass" : false,
+          "hidden-specializations" : [ { "value" : false }, { "appearance" : "dark", "value" : true } ],
+          "image-name" : "light.png",
+          "name" : "light"
+        }
+      ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.5 },
+      "translucency" : { "enabled" : false, "value" : 0.5 }
+    }
+  ],
+  "supported-platforms" : { "squares" : [ "macOS" ] }
+}
