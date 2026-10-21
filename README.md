@@ -8,8 +8,8 @@
 <p align="center"><b>Record the sound of any app on your Mac.</b></p>
 
 <p align="center">
-  <img src="docs/images/hero-light.png#gh-light-mode-only" width="760" alt="Audio Capture recording Discord with your voice. A circle beside the window shows the microphone badge on the Discord icon, larger. Beside it: Record any app, with your voice when you need it.">
-  <img src="docs/images/hero-dark.png#gh-dark-mode-only" width="760" alt="Audio Capture recording Discord with your voice. A circle beside the window shows the microphone badge on the Discord icon, larger. Beside it: Record any app, with your voice when you need it.">
+  <img src="docs/images/window-light.png#gh-light-mode-only" width="340" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
+  <img src="docs/images/window-dark.png#gh-dark-mode-only" width="340" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
 </p>
 
 <p align="center">
