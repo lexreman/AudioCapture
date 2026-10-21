@@ -558,6 +558,7 @@ enum SelfTest {
                 note = "\(image.width)x\(image.height)"
             }
         } else { note = "symbol missing" }
+        note += " innerRadius=\(model.innerRadius)"
         try? note.write(to: out.appendingPathExtension("txt"), atomically: true, encoding: .utf8)
         NSApp.terminate(nil)
     }

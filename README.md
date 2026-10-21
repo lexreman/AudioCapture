@@ -8,8 +8,8 @@
 <p align="center"><b>Record the sound of any app on your Mac.</b></p>
 
 <p align="center">
-  <img src="docs/images/window-light.png#gh-light-mode-only" width="340" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
-  <img src="docs/images/window-dark.png#gh-dark-mode-only" width="340" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
+  <img src="docs/images/window-light.png#gh-light-mode-only" width="422" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
+  <img src="docs/images/window-dark.png#gh-dark-mode-only" width="422" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
 </p>
 
 <p align="center">
