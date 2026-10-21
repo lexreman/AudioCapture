@@ -217,7 +217,7 @@ enum SelfTest {
     /// in the tests settings domain (Prefs.swift).
     static var isBackgroundRun: Bool {
         boardShotDir != nil || setupShotDir != nil || settingsShotDir != nil || snapshotDir != nil || arrowTestFile != nil
-            || crashDir != nil || quitSave != nil || layoutTestFile != nil || quitWatch != nil || ["--dump-apps", "--recovertest"].contains(where: CommandLine.arguments.contains)
+            || crashDir != nil || quitSave != nil || layoutTestFile != nil || quitWatch != nil || realCaptureFile != nil || ["--dump-apps", "--recovertest"].contains(where: CommandLine.arguments.contains)
     }
 
     static var arrowTestFile: URL? {
@@ -529,6 +529,36 @@ enum SelfTest {
         while model.phase != .finished && Date().timeIntervalSince(t) < 10 { try? await Task.sleep(for: .milliseconds(20)) }
         log.append("saved: phase=\(model.phase) selection=\(model.selection) listed=\(model.visibleAppIDs.contains(id)) file=\(model.chip?.url.lastPathComponent ?? "nil")")
         try? log.joined(separator: "\n").write(to: out.appendingPathComponent("quitsave.log"), atomically: true, encoding: .utf8)
+        NSApp.terminate(nil)
+    }
+
+    static var realCaptureFile: URL? {
+        let a = CommandLine.arguments
+        guard let i = a.firstIndex(of: "--realcapture"), a.count > i + 1 else { return nil }
+        return URL(fileURLWithPath: a[i + 1])
+    }
+
+    /// The window as the window server composes it (frame, edges, shadow), through the call that lets an app
+    /// image its own windows; it is looked up at run time because newer SDKs hide it. Development only.
+    static func realCapture(model: AppModel, window: NSWindow, out: URL) async {
+        let look = CommandLine.arguments.firstIndex(of: "--look").flatMap { $0 + 1 < CommandLine.arguments.count ? CommandLine.arguments[$0 + 1] : nil }
+        NSApp.appearance = NSAppearance(named: look == "light" ? .aqua : .darkAqua); window.appearance = NSApp.appearance
+        if model.phase == .onboarding { model.phase = .ready }
+        model.apps._debugStage(["com.apple.Safari", "com.hnc.Discord", "com.apple.podcasts"], playing: ["com.apple.Safari": 0.55])
+        model.selection = .app("com.apple.Safari")
+        try? await Task.sleep(for: .seconds(2))
+        typealias CreateImage = @convention(c) (CGRect, UInt32, UInt32, UInt32) -> Unmanaged<CGImage>?
+        var note = "no image"
+        if let sym = dlsym(UnsafeMutableRawPointer(bitPattern: -2), "CGWindowListCreateImage") {
+            let create = unsafeBitCast(sym, to: CreateImage.self)
+            // including this window only, at the best resolution, with its frame and shadow
+            if let image = create(.null, 1 << 3, UInt32(window.windowNumber), 1 << 3)?.takeRetainedValue() {
+                let rep = NSBitmapImageRep(cgImage: image)
+                try? rep.representation(using: .png, properties: [:])?.write(to: out)
+                note = "\(image.width)x\(image.height)"
+            }
+        } else { note = "symbol missing" }
+        try? note.write(to: out.appendingPathExtension("txt"), atomically: true, encoding: .utf8)
         NSApp.terminate(nil)
     }
 

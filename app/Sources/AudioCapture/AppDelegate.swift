@@ -89,6 +89,9 @@ final class AppDelegate: NSObject, NSApplicationDelegate, NSWindowDelegate {
                 NSApp.terminate(nil)
             }
         }
+        if let f = SelfTest.realCaptureFile {
+            Task { await SelfTest.realCapture(model: model, window: window, out: f) }
+        }
         if let q = SelfTest.quitWatch {
             Task { await SelfTest.quitWatch(model: model, out: q.out, ids: q.ids) }
         }

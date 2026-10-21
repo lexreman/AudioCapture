@@ -108,7 +108,8 @@ struct LiquidMark: View {
         }
         .frame(width: Metric.band, height: Metric.band)
         .onChange(of: state, initial: true) { old, new in
-            if old == new || reduceMotion { sim.snap(new); animating = false; return }
+            // Renders for the README take the settled shape, as the app shows it at rest (no mid-splash frame).
+            if old == new || reduceMotion || SelfTest.isBackgroundRun { sim.snap(new); animating = false; return }
             sim.flow(to: new); last = Date(); animating = true
         }
     }

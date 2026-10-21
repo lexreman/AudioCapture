@@ -57,8 +57,8 @@ While you record, your voice is mixed into the same file, in time wit
 
 ## Settings
 
-<img src="images/settings-light.png#gh-light-mode-only" width="420" alt="Audio Capture Settings: Save to, with the Audio Capture folder, and Format, with AAC chosen, and Microphone, in the middle. 115 MB per hour.">
-<img src="images/settings-dark.png#gh-dark-mode-only" width="420" alt="Audio Capture Settings: Save to, with the Audio Capture folder, and Format, with AAC chosen, and Microphone, in the middle. 115 MB per hour.">
+<img src="images/settings-light.png#gh-light-mode-only" width="500" alt="Audio Capture Settings: Save to, with the Audio Capture folder, and Format, with AAC chosen, and Microphone, in the middle. 115 MB per hour.">
+<img src="images/settings-dark.png#gh-dark-mode-only" width="500" alt="Audio Capture Settings: Save to, with the Audio Capture folder, and Format, with AAC chosen, and Microphone, in the middle. 115 MB per hour.">
 
 Choose Audio Capture > Settings, or press Command‑Comma.
 

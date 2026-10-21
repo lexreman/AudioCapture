@@ -8,8 +8,8 @@
 <p align="center"><b>Record the sound of any app on your Mac.</b></p>
 
 <p align="center">
-  <img src="docs/images/window-light.png#gh-light-mode-only" width="340" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
-  <img src="docs/images/window-dark.png#gh-dark-mode-only" width="340" alt="Audio Capture recording Safari. The Safari row has turned into a live level meter, and the elapsed time shows beside the stop button.">
+  <img src="docs/images/hero-light.png#gh-light-mode-only" width="760" alt="Audio Capture recording Discord with your voice. A circle beside the window shows the microphone badge on the Discord icon, larger. Beside it: Record any app, with your voice when you need it.">
+  <img src="docs/images/hero-dark.png#gh-dark-mode-only" width="760" alt="Audio Capture recording Discord with your voice. A circle beside the window shows the microphone badge on the Discord icon, larger. Beside it: Record any app, with your voice when you need it.">
 </p>
 
 <p align="center">
@@ -43,8 +43,8 @@ Right‑click an app and choose Include my voice.<br>Your microphone joi
 It listens through the microphone the app uses, and only while the app is using it.<br>For Everything, it uses your Mac's input.<br>On speakers instead of headphones, it tells you when your microphone hears the call.
 
 <p align="center">
-  <img src="docs/images/voice-loupe-light.png#gh-light-mode-only" width="550" alt="Audio Capture recording Discord with your voice. A magnifying lens over the Discord icon shows the small microphone badge.">
-  <img src="docs/images/voice-loupe-dark.png#gh-dark-mode-only" width="550" alt="Audio Capture recording Discord with your voice. A magnifying lens over the Discord icon shows the small microphone badge.">
+  <img src="docs/images/voice-light.png#gh-light-mode-only" width="524" alt="Audio Capture recording Discord with your voice. A circle beside the window shows the microphone badge on the Discord icon, larger.">
+  <img src="docs/images/voice-dark.png#gh-dark-mode-only" width="524" alt="Audio Capture recording Discord with your voice. A circle beside the window shows the microphone badge on the Discord icon, larger.">
 </p>
 
 ## Privacy
